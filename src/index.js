@@ -1,7 +1,10 @@
 import fs from 'fs';
 import express from 'express';
+import cors from 'cors';
 
 const app = express();
+app.use(cors());
+
 const port = 4201;
 
 app.get('/', (req, res) => {
